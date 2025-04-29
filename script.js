@@ -34,6 +34,23 @@ document
 
     });
 
+const aboutDropdown = document.getElementById("aboutDropdown");
+const escondido = document.getElementById("escondido")
+const sobre = document.getElementById("sobre")
+sobre.addEventListener("click", () => {
+
+
+
+
+
+    aboutDropdown.classList.toggle("show");
+});
+
+
+
+
 function toggleHtmlClass() {
     document.documentElement.classList.toggle("light");
-}
+};
+
+
