@@ -4,6 +4,7 @@
   box-sizing: border-box;
   max-width: 100%;
   transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
