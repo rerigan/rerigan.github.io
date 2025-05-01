@@ -27,30 +27,8 @@
   --socialshover: rgba(0, 0, 0, 0.5);
 }
 
-#background {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  z-index: -2;
-  opacity: 50%;
-}
-#background2 {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  z-index: -1;
-  opacity: 0%;
-  transition: all 0.3s;
-}
-.backgroundchange#background2 {
-  opacity: 100%;
-  transition: all 0.5s;
-}
-
 body {
-  background: #000;
+  background: var(--make-it-whiter);
   min-height: 100vh;
 }
 
