@@ -46,6 +46,7 @@ body {
 #profile img {
   border-radius: 100%;
   margin-top: 20px;
+  margin-bottom:20px;
 }
 
 #profile {
@@ -155,4 +156,17 @@ footer a:hover {
   max-height: 500px; 
   opacity: 1;
 
+}
+
+#foto{
+  animation:hover 5s infinite alternate;
+}
+
+
+@keyframes hover {
+  0% {transform:translateY(0px) translateX(0px)}
+  25%{transform:translateX(-3px)}
+  50% {transform:translateY(10px) translateX(5px)}
+  75%{transform:translateX(10px)}
+  100% {transform:translateY(0px) translateX(0px)}
 }
