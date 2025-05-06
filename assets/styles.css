@@ -15,6 +15,7 @@
   --button-color: rgba(0, 0, 0, 1);
   --whitelight: white;
   --socialshover: rgba(255, 255, 255, 0.5);
+  --linkedinlink: rgb(176, 255, 242);
 }
 
 .light {
@@ -23,9 +24,10 @@
   --make-it-black: black;
   --stroke-color: black;
   --stroke-color-highlight: rgba(255, 255, 255, 0.7);
-  --button-color: rgba(97, 97, 97, 0.5);
-  --whitelight: white;
+  --button-color: rgba(97, 97, 97, 0.1);
+  --whitelight: rgb(236, 236, 236);
   --socialshover: rgba(0, 0, 0, 0.5);
+  --linkedinlink: rgb(0, 89, 255);
 }
 
 body {
@@ -66,6 +68,7 @@ ul {
   flex-direction: column;
   gap: 16px;
   padding: 24px;
+
 }
 
 ul li a {
@@ -73,7 +76,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--button-color);
   text-decoration: none;
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
@@ -82,22 +85,28 @@ ul li a {
   backdrop-filter: blur(4px);
   font-weight: 500;
   transition: background 200ms;
+  color: var(--text-color);
+}
+
+#linkedinlink{
+  color:var(--linkedinlink);
 }
 
 ul li a:hover {
   border: 1px solid var(--text-color);
-  background: rgba(0, 0, 0, 0.8);
-  color: var(--whitelight);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--make-it-black);
 }
 #socials {
   display: flex;
   justify-content: center;
   gap: 25px;
   font-size: 29px;
+  
 }
 #socials a {
   display: flex;
-  color: white;
+  color: var(--text-color);
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -109,7 +118,7 @@ ul li a:hover {
 #socials a:hover {
   background: var(--socialshover);
   transition: background 0.2s;
-  color: white;
+  color:var(--make-it-black)
 }
 
 footer {
